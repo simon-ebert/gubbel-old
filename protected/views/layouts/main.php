@@ -5,24 +5,26 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="en" />
 
-        <!-- blueprint CSS framework -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-        <!--[if lt IE 8]>
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-        
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" />
-        
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gubbel.css" />
-        
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery/jquery.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/dragend.min.js"></script>
+            <!-- blueprint CSS framework -->
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
+            <!--[if lt IE 8]>
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
+            <![endif]-->
 
-        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
+
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" />
+
+            <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gubbel.css" />
+
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery/jquery.min.js"></script>
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/dragend.min.js"></script>
+
+            <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
     <body>
