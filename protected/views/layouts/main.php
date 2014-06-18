@@ -17,6 +17,8 @@
         
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery.mobile-1.4.2/jquery.mobile-1.4.2.css" />
         
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gubbel.css" />
+        
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery/jquery.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/dragend.min.js"></script>
 
