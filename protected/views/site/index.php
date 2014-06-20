@@ -4,6 +4,13 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 
+</div>
+                <div data-role="header" style="position:fixed;top:0px;left:0px;right:0px;;">
+            <h1><b>Profil</b></h1>
+            <div data-role="navbar">
+                
+            </div><!-- /navbar -->
+        </div><!-- /header -->
 <div id="top">Logged in as: Max.Mustermann@gmail.com</div>
 
 <div id="person">

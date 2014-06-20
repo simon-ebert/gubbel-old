@@ -22,51 +22,28 @@
             <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/gubbel.css" />
 
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery/jquery.min.js"></script>
+            <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
             <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/dragend.min.js"></script>
 
             <title><?php echo CHtml::encode($this->pageTitle); ?></title>
     </head>
 
-    <body>
+    <body style="padding-top:170px;">
+        
+        <div class="container" id="page" style="margin-top: 40px; ">
+             <?php echo $content; ?>
+        
 
-        <div class="container" id="page">
-
-            <div id="header">
-                <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-            </div><!-- header -->
-
-            <div id="mainmenu">
-                <?php
-                $this->widget('zii.widgets.CMenu', array(
-                    'items' => array(
-                        array('label' => 'Home', 'url' => array('/site/index')),
-                        array('label' => 'About', 'url' => array('/site/page', 'view' => 'about')),
-                        array('label' => 'Contact', 'url' => array('/site/contact')),
-                        array('label' => 'Login', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-                        array('label' => 'Logout (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
-                    ),
-                ));
-                ?>
-            </div><!-- mainmenu -->
-            <?php if (isset($this->breadcrumbs)): ?>
-                <?php
-                $this->widget('zii.widgets.CBreadcrumbs', array(
-                    'links' => $this->breadcrumbs,
-                ));
-                ?><!-- breadcrumbs -->
-            <?php endif ?>
-
-            <?php echo $content; ?>
-
-            <div class="clear"></div>
-
-            <div id="footer">
-                Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-                All Rights Reserved.<br/>
-                <?php echo Yii::powered(); ?>
-            </div><!-- footer -->
-
-        </div><!-- page -->
+        
+        <div data-role="footer" class="nav-glyphish-example"  style="position:fixed;bottom:0px;left:0px;right:0px;">
+            <div data-role="navbar" class="nav-glyphish-example" >
+            <ul>
+                <li><a href="<?php echo $url=$this->createUrl("/site/index"); ?>" rel="external" id="profil" data-icon="grid">Profil</a></li>
+                <li><a href="<?php echo $url=$this->createUrl("/site/events"); ?>" rel="external" id="events" data-icon="grid">Events</a></li>
+                <li><a href="#" id="einfo" data-icon="grid">E-Info</a></li>
+            </ul>
+            </div>
+        </div>
 
     </body>
 </html>

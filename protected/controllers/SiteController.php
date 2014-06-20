@@ -31,6 +31,13 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
+        
+        public function actionEvents()
+	{
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$this->render('Events');
+	}
 
 	/**
 	 * This is the action to handle external exceptions.
@@ -98,6 +105,7 @@ class SiteController extends Controller
 		$this->render('login',array('model'=>$model));
 	}
 
+        
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
@@ -106,4 +114,6 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+        
+        
 }
