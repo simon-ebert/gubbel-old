@@ -17,27 +17,17 @@ $this->pageTitle = Yii::app()->name;
     <div id="car-left">
         <img id="car-pic" src="<?php echo Yii::app()->request->baseUrl; ?>/assets/i3.png" ></div>
     <div id="car-bottom">
-        <table>
-            <tr>
-                <td class="bold">Event: </td>
-                <td>TEST</td>
-            </tr>
-            <tr>
-                <td class="bold">Event: </td>
-                <td>Event</td>
-            </tr>
-            <tr>
-                <td class="bold">Event </td>
-                <td>Event</td>
-            </tr>
-            <tr>
-                <td class="bold">Event </td>
-                <td>Event</td>
-            </tr>
-            <tr>
-                <td class="bold">Event</td>
-                <td>Event</td>
-            </tr>
-        </table>
     </div>
+        <ul data-role="listview" data-inset="true">
+    <li><a href="#">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/ferienregion_tegernsee.jpg">
+    <h2>Tegernsee</h2>
+    <p>i3 Fahrt zum schönen Tegernsee mit anschließendem Bier im Bräustüberl...</p></a>
+    </li>
+    <li><a href="#">
+            <img src="<?php echo Yii::app()->request->baseUrl; ?>/assets/ferienregion_tegernsee.jpg">
+    <h2>Chiemsee</h2>
+    <p>Ausflug zum bayrischen Meer im Tesla Model S...</p></a>
+    </li>
+</ul>
 </div>
