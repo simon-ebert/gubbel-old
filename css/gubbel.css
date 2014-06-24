@@ -26,18 +26,13 @@ and open the template in the editor.
     vertical-align: top;
 }
 
-#person-right {
-    margin-left: 20px;
-}
-
 #person-pic {
     max-width: 91px;
     max-height: 122px;
 }
 
 #car-pic{
-    max-width: 280px;
-    max-height: 143px;
+    max-width: 317px;
 }
 
 .bold {
@@ -47,4 +42,8 @@ and open the template in the editor.
 #car-bottom {
     display: inline-block;
     margin-top: 20px;
+}
+
+.event_thumb{
+    margin: 13px 0 0 9px;
 }

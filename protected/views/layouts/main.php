@@ -33,8 +33,6 @@
         <div class="container" id="page" style="margin-top: 40px; ">
              <?php echo $content; ?>
         
-
-        
         <div data-role="footer" class="nav-glyphish-example"  style="position:fixed;bottom:0px;left:0px;right:0px;">
             <div data-role="navbar" class="nav-glyphish-example" >
             <ul>

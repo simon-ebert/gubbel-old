@@ -34,9 +34,17 @@ class SiteController extends Controller
         
         public function actionEvents()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('Events');
+	}
+        
+        public function actionTegernsee()
+	{
+		$this->render('Tegernsee');
+	}
+        
+        public function actionChiemsee()
+	{
+		$this->render('Chiemsee');
 	}
 
 	/**
