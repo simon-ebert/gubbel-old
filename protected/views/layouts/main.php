@@ -36,9 +36,9 @@
         <div data-role="footer" class="nav-glyphish-example"  style="position:fixed;bottom:0px;left:0px;right:0px;">
             <div data-role="navbar" class="nav-glyphish-example" >
             <ul>
-                <li><a href="<?php echo $url=$this->createUrl("/site/index"); ?>" rel="external" id="profil" data-icon="grid">Profil</a></li>
-                <li><a href="<?php echo $url=$this->createUrl("/site/events"); ?>" rel="external" id="events" data-icon="grid">Events</a></li>
-                <li><a href="#" id="einfo" data-icon="grid">E-Info</a></li>
+                <li><a href="<?php echo $url=$this->createUrl("/site/index"); ?>" rel="external" id="profil" data-icon="user">Profil</a></li>
+                <li><a href="<?php echo $url=$this->createUrl("/site/events"); ?>" rel="external" id="events" data-icon="calendar">Events</a></li>
+                <li><a href="#" id="einfo" data-icon="info">E-Info</a></li>
             </ul>
             </div>
         </div>
