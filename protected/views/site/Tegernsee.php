@@ -8,6 +8,7 @@ $this->pageTitle = Yii::app()->name;
 ?>
 </div>
 <div data-role="header" style="position:fixed;top:0px;left:0px;right:0px;;">
+    <a href="<?php echo $url=$this->createUrl("/site/events"); ?>" data-icon="carat-l" class="ui-btn-left">Back</a>
     <h1><b>Tegernsee</b></h1>
     <div data-role="navbar">
 
