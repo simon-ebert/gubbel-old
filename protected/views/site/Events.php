@@ -8,6 +8,7 @@ $this->pageTitle = Yii::app()->name;
 ?>
 </div>
 <div data-role="header" style="position:fixed;top:0px;left:0px;right:0px;;">
+    <a href="#" data-icon="plus" class="ui-btn-right">Add</a>
     <h1><b>Events</b></h1>
     <div data-role="navbar">
 
